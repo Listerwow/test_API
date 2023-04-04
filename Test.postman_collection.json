@@ -1,0 +1,587 @@
+{
+	"info": {
+		"_postman_id": "7f999e65-2c3c-4705-b687-fdba258b604a",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24050363"
+	},
+	"item": [
+		{
+			"name": "Test 1 all users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"id\":58175,\"name\":\"Ahilya Nair\",\"email\":\"ahilya_nair@rau.io\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":58173,\"name\":\"Deeptiman Achari\",\"email\":\"deeptiman_achari@okon.com\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":52288,\"name\":\"Goswamee Malik I\",\"email\":\"i_malik_goswamee@bernhard.net\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":46239,\"name\":\"Apsara Shukla\",\"email\":\"apsara_shukla@davis.name\",\"gender\":\"female\",\"status\":\"active\"},{\"id\":45248,\"name\":\"Ganesh Joshi\",\"email\":\"joshi_ganesh@tillman.biz\",\"gender\":\"female\",\"status\":\"active\"},{\"id\":45247,\"name\":\"Anagh Jha\",\"email\":\"jha_anagh@rau.io\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":45246,\"name\":\"Purnima Pillai\",\"email\":\"purnima_pillai@steuber-okon.io\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":45245,\"name\":\"Miss Sanjay Mehra\",\"email\":\"miss_mehra_sanjay@bartell-lueilwitz.org\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":45242,\"name\":\"Vidya Khatri\",\"email\":\"khatri_vidya@pollich-johns.net\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":45241,\"name\":\"Trilokesh Panicker\",\"email\":\"panicker_trilokesh@robel-lemke.info\",\"gender\":\"male\",\"status\":\"active\"}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 2 users list 12",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"id\":58175,\"name\":\"Ahilya Nair\",\"email\":\"ahilya_nair@rau.io\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":58173,\"name\":\"Deeptiman Achari\",\"email\":\"deeptiman_achari@okon.com\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":52288,\"name\":\"Goswamee Malik I\",\"email\":\"i_malik_goswamee@bernhard.net\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":46239,\"name\":\"Apsara Shukla\",\"email\":\"apsara_shukla@davis.name\",\"gender\":\"female\",\"status\":\"active\"},{\"id\":45248,\"name\":\"Ganesh Joshi\",\"email\":\"joshi_ganesh@tillman.biz\",\"gender\":\"female\",\"status\":\"active\"},{\"id\":45247,\"name\":\"Anagh Jha\",\"email\":\"jha_anagh@rau.io\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":45246,\"name\":\"Purnima Pillai\",\"email\":\"purnima_pillai@steuber-okon.io\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":45245,\"name\":\"Miss Sanjay Mehra\",\"email\":\"miss_mehra_sanjay@bartell-lueilwitz.org\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":45242,\"name\":\"Vidya Khatri\",\"email\":\"khatri_vidya@pollich-johns.net\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":45241,\"name\":\"Trilokesh Panicker\",\"email\":\"panicker_trilokesh@robel-lemke.info\",\"gender\":\"male\",\"status\":\"active\"}]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users?page=12&limit=10",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "12"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 3 users not body",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 4 users create",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mark\",\r\n \"gender\":\"male\",\r\n  \"email\":\"marktest@gmail.com\",\r\n   \"status\":\"active\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 5 users check",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mark\",\r\n \"gender\":\"male\",\r\n  \"email\":\"marktest@gmail.com\",\r\n   \"status\":\"active\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test new Mark email",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mark\",\r\n \"gender\":\"male\",\r\n  \"email\":\"Marktest3@gmail.com\",\r\n   \"status\":\"active\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 6 users Mark email 1,2,3 chek",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Mark\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 7 Mark Update user Ramil end email",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Ramil\",\r\n \"gender\":\"male\",\r\n   \"status\":\"active\",\r\n   \"email\":\"Ramilpostman2023@15ce.com\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/79970",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"79970"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 8 Ramil user check",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Ramil\",\r\n \"gender\":\"male\",\r\n   \"status\":\"active\",\r\n   \"email\":\"Ramilpostman2023@15ce.com\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/79970",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"79970"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 9 Patch Ramil status and email",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"status\":\"inactive\",\r\n\"email\":\"Khanovramil@gmail.com\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/79970",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"79970"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 10 delete id79970",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/79970",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"79970"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 11 check id79970",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"id\":43429,\"name\":\"Chaturaanan Reddy\",\"email\":\"chaturaanan_reddy@king.net\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":43427,\"name\":\"Anal Varman\",\"email\":\"varman_anal@mann-steuber.info\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":43423,\"name\":\"Anal Saini\",\"email\":\"anal_saini@effertz.biz\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":43422,\"name\":\"Vishnu Butt Sr.\",\"email\":\"butt_sr_vishnu@mayer.net\",\"gender\":\"male\",\"status\":\"active\"},{\"id\":43421,\"name\":\"Adhrit Johar\",\"email\":\"adhrit_johar@friesen.net\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":43419,\"name\":\"Anuraag Varma\",\"email\":\"varma_anuraag@hirthe-raynor.info\",\"gender\":\"female\",\"status\":\"active\"},{\"id\":43418,\"name\":\"Subhasini Deshpande\",\"email\":\"deshpande_subhasini@pollich-mayert.co\",\"gender\":\"male\",\"status\":\"active\"},{\"id\":43417,\"name\":\"Bhishma Nehru\",\"email\":\"bhishma_nehru@littel.io\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":41858,\"name\":\"Sheela Sinha\",\"email\":\"sinha_sheela@oconnell-mills.net\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":41856,\"name\":\"Bandhul Johar III\",\"email\":\"iii_johar_bandhul@weissnat-dach.name\",\"gender\":\"female\",\"status\":\"active\"}]"
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/79970",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"79970"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 12 delete 80094",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"id\":43429,\"name\":\"Chaturaanan Reddy\",\"email\":\"chaturaanan_reddy@king.net\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":43427,\"name\":\"Anal Varman\",\"email\":\"varman_anal@mann-steuber.info\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":43423,\"name\":\"Anal Saini\",\"email\":\"anal_saini@effertz.biz\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":43422,\"name\":\"Vishnu Butt Sr.\",\"email\":\"butt_sr_vishnu@mayer.net\",\"gender\":\"male\",\"status\":\"active\"},{\"id\":43421,\"name\":\"Adhrit Johar\",\"email\":\"adhrit_johar@friesen.net\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":43419,\"name\":\"Anuraag Varma\",\"email\":\"varma_anuraag@hirthe-raynor.info\",\"gender\":\"female\",\"status\":\"active\"},{\"id\":43418,\"name\":\"Subhasini Deshpande\",\"email\":\"deshpande_subhasini@pollich-mayert.co\",\"gender\":\"male\",\"status\":\"active\"},{\"id\":43417,\"name\":\"Bhishma Nehru\",\"email\":\"bhishma_nehru@littel.io\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":41858,\"name\":\"Sheela Sinha\",\"email\":\"sinha_sheela@oconnell-mills.net\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":41856,\"name\":\"Bandhul Johar III\",\"email\":\"iii_johar_bandhul@weissnat-dach.name\",\"gender\":\"female\",\"status\":\"active\"}]"
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/80094",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"80094"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Test 13 delete 80091",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "c9d167817f7ab09710bca3e4e3381df74fb667a9fd4631ed81e01490a23a0a55",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[{\"id\":43429,\"name\":\"Chaturaanan Reddy\",\"email\":\"chaturaanan_reddy@king.net\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":43427,\"name\":\"Anal Varman\",\"email\":\"varman_anal@mann-steuber.info\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":43423,\"name\":\"Anal Saini\",\"email\":\"anal_saini@effertz.biz\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":43422,\"name\":\"Vishnu Butt Sr.\",\"email\":\"butt_sr_vishnu@mayer.net\",\"gender\":\"male\",\"status\":\"active\"},{\"id\":43421,\"name\":\"Adhrit Johar\",\"email\":\"adhrit_johar@friesen.net\",\"gender\":\"male\",\"status\":\"inactive\"},{\"id\":43419,\"name\":\"Anuraag Varma\",\"email\":\"varma_anuraag@hirthe-raynor.info\",\"gender\":\"female\",\"status\":\"active\"},{\"id\":43418,\"name\":\"Subhasini Deshpande\",\"email\":\"deshpande_subhasini@pollich-mayert.co\",\"gender\":\"male\",\"status\":\"active\"},{\"id\":43417,\"name\":\"Bhishma Nehru\",\"email\":\"bhishma_nehru@littel.io\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":41858,\"name\":\"Sheela Sinha\",\"email\":\"sinha_sheela@oconnell-mills.net\",\"gender\":\"female\",\"status\":\"inactive\"},{\"id\":41856,\"name\":\"Bandhul Johar III\",\"email\":\"iii_johar_bandhul@weissnat-dach.name\",\"gender\":\"female\",\"status\":\"active\"}]"
+				},
+				"url": {
+					"raw": "https://gorest.co.in/public/v2/users/80086",
+					"protocol": "https",
+					"host": [
+						"gorest",
+						"co",
+						"in"
+					],
+					"path": [
+						"public",
+						"v2",
+						"users",
+						"80086"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
